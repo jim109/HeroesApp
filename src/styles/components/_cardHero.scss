@@ -1,0 +1,64 @@
+
+
+.card{    
+    height: 100%;
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;  
+   
+    
+}
+
+.card_container{
+    width: 900px;
+    background-color: #758490;
+    height: 286px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.img_card{
+    border-radius: 20px ;
+}
+
+.principal_dates{
+    width: 400px;
+    padding: 40px;    
+    p{
+        padding: 10px;
+    }
+
+
+}
+
+.card_stadistics{
+    display: grid;
+    border-radius: 15px;
+    width: 150px;
+    background-color: #757E85;    
+    height: 100%;
+    padding: 20px 0px 0px 20px;
+    p{
+        display: grid;
+    }
+    
+}
+
+.link{
+    padding-left: 8px;
+    cursor: pointer;
+    .link_access{
+        text-decoration: none;
+    }
+    
+}
+
+.link_access :hover {
+    color: #757E85;
+}
+
