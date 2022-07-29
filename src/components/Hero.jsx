@@ -2,6 +2,8 @@
 
 export const Hero = ({ appearance, biography, connections, images, powerstats, work, name }) => {
 
+  console.log('errors')
+
   return(
             <div className="container_hero">
                 <div className="container_images">

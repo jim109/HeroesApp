@@ -1,7 +1,8 @@
 
 import { useParams } from "react-router-dom";
-import { Hero } from "../components/hero";
 import { useFetch } from "../hooks/useFetch";
+
+import { Hero } from "../components/Hero";
 
 export const Heroe = () => {
     const params = useParams();
@@ -10,13 +11,13 @@ export const Heroe = () => {
 
     const url = `https://ea1w717ym2.execute-api.us-east-1.amazonaws.com/api/hero?id=${id}`
 
-    const { data } = useFetch(url);
+    const { data, loading, error} = useFetch(url);
 
     let listHeroes = [];
-    
+ 
 
     listHeroes = data; 
-
+ 
     const { appearance, biography, connections, images, powerstats, work, name } = listHeroes
 
 
@@ -24,7 +25,7 @@ export const Heroe = () => {
     <>
      
 {     
-      (listHeroes === undefined)? 
+      (loading)? 
         <h1>Cargando ...</h1>
         :     
         <Hero 

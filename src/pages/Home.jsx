@@ -18,7 +18,7 @@ export const Home = () => {
     <>
     <Title />
     {
-        (listHeroes === undefined)? 
+        (loading)? 
         <h1>Cargando.....</h1>
          : 
          listHeroes.map(item => (
